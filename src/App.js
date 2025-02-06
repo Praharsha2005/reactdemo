@@ -105,15 +105,17 @@
 
 // !props.children
 import React from 'react'
-import PropsChildrenex from './propexample/PropsChildrenex'
-import SubChildProps from './propexample/SubChildProps'
+// import PropsChildrenex from './propexample/PropsChildrenex'
+// import SubChildProps from './propexample/SubChildProps'
+import CBCStateEx from './stateexamples/CBCStateEx'
 const App = () =>{
   return(
   <div>
-    <PropsChildrenex username = "Praharsha" company = "Google">
+    <CBCStateEx></CBCStateEx>
+    {/* <PropsChildrenex username = "Praharsha" company = "Google">
       <h1>This data is passing a props children to child component</h1>
       <SubChildProps/>
-    </PropsChildrenex>
+    </PropsChildrenex> */}
     </div>
     
   )
