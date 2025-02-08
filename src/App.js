@@ -104,21 +104,55 @@
 
 
 // !props.children
-import React from 'react'
-// import PropsChildrenex from './propexample/PropsChildrenex'
-// import SubChildProps from './propexample/SubChildProps'
-import CBCStateEx from './stateexamples/CBCStateEx'
-const App = () =>{
-  return(
-  <div>
-    <CBCStateEx></CBCStateEx>
-    {/* <PropsChildrenex username = "Praharsha" company = "Google">
-      <h1>This data is passing a props children to child component</h1>
-      <SubChildProps/>
-    </PropsChildrenex> */}
-    </div>
-    
-  )
-}
-export default App
 
+// import React from 'react'
+// // import PropsChildrenex from './propexample/PropsChildrenex'
+// // import SubChildProps from './propexample/SubChildProps'
+// import CBCStateEx from './stateexamples/CBCStateEx'
+// const App = () =>{
+//   return(
+//   <div>
+//     <CBCStateEx></CBCStateEx>
+//     {/* <PropsChildrenex username = "Praharsha" company = "Google">
+//       <h1>This data is passing a props children to child component</h1>
+//       <SubChildProps/>
+//     </PropsChildrenex> */}
+//     </div>
+    
+//   )
+// }
+// export default App
+
+// import React from 'react'
+// import CBCStateEx from './stateexamples/CBCStateEx'
+// import FBCStateEx from './stateexamples/FBCStateEx'
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <CBCStateEx/> */}
+//       <FBCStateEx/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+//import FuctionalComponent from './components/FuctionalComponent';
+import ClassComponent from './components/ClassComponent';
+import MyForm from './components/MyForm';
+const App = () => {
+  return (
+    <div className='App'>
+      {/* <h1>Welocme this is App.js</h1>
+    <FuctionalComponent 
+      clg='MRU' city="Hyderabad"
+    />   */}
+    <ClassComponent/>
+    <MyForm/>
+    </div>
+  );
+};
+
+export default App;
