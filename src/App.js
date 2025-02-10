@@ -140,8 +140,9 @@
 
 
 //import FuctionalComponent from './components/FuctionalComponent';
-import ClassComponent from './components/ClassComponent';
-import MyForm from './components/MyForm';
+// import ClassComponent from './components/ClassComponent';
+// import MyForm from './components/MyForm';
+import UseEffectEx from './hookexample/useEffectEx';
 const App = () => {
   return (
     <div className='App'>
@@ -149,8 +150,10 @@ const App = () => {
     <FuctionalComponent 
       clg='MRU' city="Hyderabad"
     />   */}
-    <ClassComponent/>
-    <MyForm/>
+    {/* <ClassComponent/>
+    <MyForm/> */}
+    <UseEffectEx/>
+
     </div>
   );
 };
