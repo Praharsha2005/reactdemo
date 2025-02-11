@@ -142,7 +142,8 @@
 //import FuctionalComponent from './components/FuctionalComponent';
 // import ClassComponent from './components/ClassComponent';
 // import MyForm from './components/MyForm';
-import UseEffectEx from './hookexample/useEffectEx';
+// import UseEffectEx from './hookexample/useEffectEx';
+import RefExample from './hookexample/RefExample';
 const App = () => {
   return (
     <div className='App'>
@@ -152,7 +153,7 @@ const App = () => {
     />   */}
     {/* <ClassComponent/>
     <MyForm/> */}
-    <UseEffectEx/>
+    <RefExample/>
 
     </div>
   );
