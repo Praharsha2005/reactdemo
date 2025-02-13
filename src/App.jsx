@@ -8,6 +8,9 @@ import Store from './pages/Store';
 import Calender from './pages/Calender';
 import News from './pages/News';
 import Blog from './pages/Blog';
+import Profile from './pages/Profile';
+import MyAccount from './pages/MyAccount';
+import MySettings from './pages/MySettings';
 import PageNotFound from './pages/PageNotFound';
 const App = () => {
   return (
@@ -21,6 +24,10 @@ const App = () => {
             <Route path='/calender' element={<Calender/>}/>
             <Route path='/news' element={<News/>}/>
             <Route path='/blog' element={<Blog/>}/>
+            <Route path='/profile' element={<Profile/>}>
+            <Route path = '/profile/myaccount' element = {<MyAccount/>}/>
+            <Route path = '/profile/mysetting' element = {<MySettings/>}/>
+            </Route>
             <Route path='*' element={<PageNotFound/>}/>
         </Routes>
     </BrowserRouter>
