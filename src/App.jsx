@@ -8,10 +8,10 @@
 // import Calender from './pages/Calender';
 // import News from './pages/News';
 // import Blog from './pages/Blog';
+// import PageNotFound from './pages/PageNotFound';
 // import Profile from './pages/Profile';
 // import MyAccount from './pages/MyAccount';
 // import MySettings from './pages/MySettings';
-// import PageNotFound from './pages/PageNotFound';
 // const App = () => {
 //   return (
 //     <BrowserRouter>
@@ -25,8 +25,8 @@
 //             <Route path='/news' element={<News/>}/>
 //             <Route path='/blog' element={<Blog/>}/>
 //             <Route path='/profile' element={<Profile/>}>
-//             <Route path = '/profile/myaccount' element = {<MyAccount/>}/>
-//             <Route path = '/profile/mysetting' element = {<MySettings/>}/>
+//                   <Route path='/profile/myaccount' element={<MyAccount/>}/>
+//                   <Route path='/profile/mysetting' element={<MySettings/>}/>
 //             </Route>
 //             <Route path='*' element={<PageNotFound/>}/>
 //         </Routes>
@@ -37,13 +37,22 @@
 // export default App
 
 
-
-
 import React from 'react'
-
+import {BrowserRouter , Routes , Route} from "react-router-dom";
+import Home from './crudcomponents/Home';
+import Create from './crudcomponents/Create';
+import Edit from './crudcomponents/Edit';
+import {ToastContainer} from "react-toastify"
 const App = () => {
   return (
-    <div>App</div>
+    <BrowserRouter>
+    <ToastContainer/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/create' element={<Create/>}/>
+      <Route path='/edit/:userId' element={<Edit/>}/>
+    </Routes>
+    </BrowserRouter>
   )
 }
 
