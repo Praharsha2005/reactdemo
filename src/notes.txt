@@ -26,3 +26,10 @@ smtp  , ftp , tcp , ip etc...
 axios library :- 
 
 npm install axios
+
+
+
+
+redux:-
+********
+1. redux is the third party library used to manage state inside the applications.

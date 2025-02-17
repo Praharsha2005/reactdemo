@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "charan",
-      "email": "charan@gmail.com",
-      "phone": "9876545643"
-    },
-    {
       "id": "2",
       "name": "sai",
       "email": "sai@gmail.com",
@@ -35,6 +29,12 @@
       "name": "praharsha",
       "email": "harsha@gmail.com",
       "phone": "0987654321"
+    },
+    {
+      "id": "462",
+      "name": "Praharsha",
+      "email": "praharsha@gmail.com",
+      "phone": "987652840"
     }
   ]
 }
